@@ -1,0 +1,412 @@
+/* General Reset and Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body Background */
+body {
+    background: url('JFSD/lms.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    color: rgb(127, 166, 227);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column; /* For proper layout */
+}
+
+/* Navigation Bar */
+nav {
+    width: 100%;
+    background-color: #b8cde3; /* Nav bar*/
+    padding: 15px 0;
+    position: fixed; /* Keep it on top */
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start; /* Items side by side */
+    padding-left: 20px;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(14, 23, 35);/* components on nav bar*/
+    font-weight: bold;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+/* Container for Login, Signup, and Other Pages */
+.container {
+    background: rgba(178, 208, 250, 0.8); /* LOgin box */
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 4000px; /* Set max-width for form container */
+    text-align: center;
+    margin: auto; /* Center container */
+    margin-top: 150px; /* Adjust for Navigation Bar */
+}
+
+/* Input Fields */
+input[type="text"], input[type="password"] {
+    width: 80%; /* Center input fields */
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #681118;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Buttons Styling */
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #13aac1; /* Submit button */
+    color: rgb(5, 36, 43);/* login on submit button*/
+    cursor: pointer;
+    margin-top: 15px;
+    width: 50%; /* Center Button */
+}
+
+button:hover {
+    background-color: #1922c7; /* Darker green on hover */
+}
+
+/* Headings Styling */
+h1, h2 {
+    margin-bottom: 20px;
+}
+
+/* Links Styling */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+/* Courses Page */
+.courses-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allows boxes to wrap if there are many */
+    gap: 20px; /* Adds space between course boxes */
+}
+
+.course-box {
+    background-color: #14344f; /* Light blue background for each course box */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px; /* Fixed width for each course box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease; /* Animation for hover effect */
+}
+
+.course-box h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.course-box p {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.course-box button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.course-box button:hover {
+    background-color: #0056b3;
+}
+
+/* Hover effect */
+.course-box:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+
+/* Profile Page */
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
+    min-height: 100vh;
+    margin-top: 80px; /* Adjust for navigation bar */
+    color: #333; /* Darker text for readability */
+}
+
+.profile-box {
+    background-color: #a9cdf0; /* Light gray background */
+    border: 2px solid #007bff; /* Dark blue border */
+    border-radius: 15px;
+    padding: 30px;
+    width: 400px; /* Custom width for the profile box */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    margin: 20px auto;
+}
+
+.profile-box h2, .profile-box p {
+    margin-bottom: 15px;
+}
+
+.profile-box button {
+    padding: 10px 20px;
+    background-color: white;
+    color: rgb(101, 156, 208);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.profile-box button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+
+/* Dashboard Styling */
+.dashboard-container {
+    padding: 40px;
+    background-color: #f0f8ff; /* Light Blue Background */
+}
+
+.course-overview, .calendar-section, .notifications-section, .assignments-section {
+    margin-bottom: 30px;
+}
+
+.course-grid {
+    display: flex;
+    gap: 20px;
+}
+
+.course-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.notifications-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.assignment-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.assignment-item {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+}
+
+
+/* General Styles */
+body {
+    background-color: #f0f8ff; /* Light Blue Background */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #007bff; /* Dark Blue Background */
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline; /* Display items side by side */
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Login Container */
+.login-container {
+    margin-top: 60px; /* Space for the fixed navigation bar */
+    width: 300px; /* Width of the login box */
+    padding: 20px;
+    background-color: white; /* White background for the login box */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 100px auto; /* Center the box */
+    text-align: center; /* Center text in the box */
+}
+
+/* Form Group Styles */
+.form-group {
+    margin-bottom: 15px;
+    text-align: left; /* Align labels to the left */
+}
+
+label {
+    display: block; /* Block label for better spacing */
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%; /* Full width of input */
+    padding: 10px;
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Button Styles */
+button {
+    background-color: #007bff; /* Button Background */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%; /* Full width of button */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Link Styles */
+p a {
+    color: #007bff; /* Link color */
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+
+/* General Styles */
+body {
+    background-color: #f0f8ff; /* Light blue background */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #007bff; /* Dark Blue Background */
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline; /* Display items side by side */
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Signup Container */
+.signup-container {
+    margin-top: 80px; /* Space for the fixed navigation bar */
+    width: 350px; /* Width of the signup box */
+    padding: 20px;
+    background-color: white; /* White background for the signup box */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow */
+    margin: 100px auto; /* Center the box */
+    text-align: center; /* Center text in the box */
+}
+
+/* Form Group Styles */
+.form-group {
+    margin-bottom: 15px;
+    text-align: left; /* Align labels to the left */
+}
+
+label {
+    display: block; /* Block label for better spacing */
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%; /* Full width of input */
+    padding: 10px;
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Button Styles */
+button {
+    background-color: #007bff; /* Button Background */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%; /* Full width of button */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Link Styles */
+p a {
+    color: #007bff; /* Link color */
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline; /* Underline on hover */
+}

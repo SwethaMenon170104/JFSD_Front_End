@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="index.html">Logout</a></li>
+        </ul>
+    </nav>
+
+    <!-- Dashboard Content -->
+    <div class="container">
+        <h1>Welcome, [Username]</h1>
+
+        <div class="dashboard-container">
+            <!-- Course Overview Section -->
+            <section class="course-overview">
+                <h2>Your Courses</h2>
+                <div class="course-grid">
+                    <!-- Individual Course Cards -->
+                    <div class="course-card">
+                        <h3>Web Development</h3>
+                        <p>Progress: 50%</p>
+                        <p>Next Assignment: Due in 3 Days</p>
+                        <button>Go to Course</button>
+                    </div>
+                    <div class="course-card">
+                        <h3>Data Structures</h3>
+                        <p>Progress: 30%</p>
+                        <p>Next Assignment: Due in 5 Days</p>
+                        <button>Go to Course</button>
+                    </div>
+                    <!-- Add more course cards as needed -->
+                </div>
+            </section>
+
+            <!-- Calendar Section -->
+            <section class="calendar-section">
+                <h2>Upcoming Deadlines</h2>
+                <div class="calendar">
+                    <!-- Calendar Widget (can integrate a JS calendar plugin) -->
+                    <p>No upcoming events. Check your assignments!</p>
+                </div>
+            </section>
+
+            <!-- Recent Activity/Notifications -->
+            <section class="notifications-section">
+                <h2>Recent Activity</h2>
+                <ul class="notifications-list">
+                    <li>New assignment uploaded in Web Development.</li>
+                    <li>Instructor posted an announcement in Data Structures.</li>
+                </ul>
+            </section>
+
+            <!-- Assignments Section -->
+            <section class="assignments-section">
+                <h2>Pending Assignments</h2>
+                <div class="assignment-list">
+                    <div class="assignment-item">
+                        <h3>Web Development - Assignment 1</h3>
+                        <p>Due Date: 10/15/2024</p>
+                        <button>Submit Assignment</button>
+                    </div>
+                    <div class="assignment-item">
+                        <h3>Data Structures - Assignment 2</h3>
+                        <p>Due Date: 10/20/2024</p>
+                        <button>Submit Assignment</button>
+                    </div>
+                    <!-- Add more assignments -->
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
